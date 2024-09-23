@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./images/bg-desktop.svg);
+    background-size: 100vw 100vh;
+    background-color: hsl(257, 40%, 49%);
+    padding: 20px 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+nav img{
+    width: 200px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+main img{
+    width: 50%;
+    margin-top: 50px;
+}
+main h1{
+    color: white;
+    font-size: 40px;
+}
+.intro{
+    width: 40%;
+}
+.intro p{
+    color: hsla(0, 0%, 100%, 0.801);
+    padding: 20px 0;
+}
+button{
+    padding: 15px 55px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: hsl(257, 40%, 49%);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: right;
+}
+i{
+    color: white;
+    font-size: 25px;
+    border: solid;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 5px;
+}
+i:hover{
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+}
+@media (max-width:700px){
+    body{
+        background: url(./images/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-color: hsl(257, 40%, 49%);
+    }
+    main img{
+        width: 100%;
+    }
+    main{
+        flex-direction: column;
+    }
+    .intro{
+        width: 100%;
+        text-align: center;
+    }
+    button{
+        margin: 20px;
+    }
+    footer{
+        justify-content: center;
+        margin: 70px;
+    }
+}
